@@ -21,6 +21,7 @@ type Goinfo struct {
 type Global struct {
 	Id          int    `xorm:"INT(11) PK AUTOINCR comment('主键')" json:"id"`          //主键
 	SiteUrl     string `xorm:"VARCHAR(255) comment('网站地址')" json:"site_url"`         //网站地址
+	Author string `xorm:"VARCHAR(64) comment('作者')" json:"author"` //作者
 	LogoUrl     string `xorm:"VARCHAR(255) comment('Logo地址')" json:"logo_url"`       //Logo地址
 	Title       string `xorm:"VARCHAR(255) comment('网站标题')" json:"title"`            //网站标题
 	Keywords    string `xorm:"VARCHAR(255) comment('网站关键词')" json:"keywords"`        //网站关键词

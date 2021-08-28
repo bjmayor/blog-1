@@ -130,4 +130,9 @@ git clone https://github.com/zxysilent/blog.git
 # 补充说明
 下载下来后。
 `swag init` 生成swager 文档。直接运行会报错。
+
 复制 config.dev.toml 为 config.toml 改成你自己的配置信息。 
+
+密码直接登录后台改。账户得改数据库的num字段。
+
+博客数据等，直接truncate table 清空吧。

@@ -3,6 +3,7 @@ title = "blog"
 intro = "简单内容管理-blog"
 mode = "dev"
 addr = ":8085"
+author = "bjmayor"
 srv = "http://127.0.0.1:8085"
 
 # token 相关
