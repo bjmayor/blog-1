@@ -7,7 +7,7 @@ import (
 // Cate 分类
 type Cate struct {
 	Id    int    `xorm:"INT(11) PK AUTOINCR comment('主键')" json:"id"`    //主键
-	Name  string `xorm:"UNIQUE VARCHAR(255) comment('分类名')" json:"name"` //分类名
+	Name  string `xorm:"UNIQUE VARCHAR(64) comment('分类名')" json:"name"` //分类名
 	Intro string `xorm:"VARCHAR(255) comment('描述')" json:"intro"`        //描述
 }
 

@@ -14,7 +14,7 @@ type Post struct {
 	Kind     int       `xorm:"INT(11) comment('1-文章，2-页面')" json:"kind"`               //类型1-文章，2-页面
 	Status   int       `xorm:"INT(11) comment('1-草稿，2-已发布')" json:"status"`            //状态1-草稿，2-已发布
 	Title    string    `xorm:"VARCHAR(255)" json:"title"`                              //标题
-	Path     string    `xorm:"VARCHAR(255) UNIQUE comment('URL 的 path') " json:"path"` //访问路径
+	Path     string    `xorm:"VARCHAR(128) UNIQUE comment('URL 的 path') " json:"path"` //访问路径
 	Summary  string    `xorm:"TEXT comment('摘要')" json:"summary"`                      //摘要
 	Markdown string    `xorm:"MEDIUMTEXT comment('markdown')" json:"markdown"`         //markdown内容
 	Richtext string    `xorm:"MEDIUMTEXT comment('富文本')" json:"richtext"`              //富文本内容

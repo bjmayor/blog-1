@@ -5,7 +5,7 @@ import "strconv"
 // Tag 标签
 type Tag struct {
 	Id    int    `xorm:"INT(11) PK AUTOINCR comment('主键')" json:"id"`    //主键
-	Name  string `xorm:"UNIQUE VARCHAR(255) comment('标签名')" json:"name"` //标签名
+	Name  string `xorm:"UNIQUE VARCHAR(64) comment('标签名')" json:"name"` //标签名
 	Intro string `xorm:"VARCHAR(255) comment('描述')" json:"intro"`        //描述
 }
 

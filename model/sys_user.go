@@ -8,7 +8,7 @@ import (
 type User struct {
 	Id       int       `xorm:"INT(11) PK AUTOINCR comment('主键')" json:"id"`              //主键
 	Name     string    `xorm:"VARCHAR(255) comment('姓名')" json:"name"`                   //姓名
-	Num      string    `xorm:"VARCHAR(255) UNIQUE comment('账号')" json:"num"`             //账号
+	Num      string    `xorm:"VARCHAR(64) UNIQUE comment('账号')" json:"num"`             //账号
 	OpenidQq string    `xorm:"VARCHAR(64) UNIQUE comment('qq_openid')" json:"openid_qq"` //qq
 	Passwd   string    `xorm:"VARCHAR(255) comment('密码')" json:"passwd"`                 //密码
 	Email    string    `xorm:"VARCHAR(255) comment('邮箱')" json:"email"`                  //邮箱
