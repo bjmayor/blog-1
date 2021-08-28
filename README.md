@@ -126,13 +126,8 @@ git clone https://github.com/zxysilent/blog.git
 ![image](./data/imgs/backend-5.png)
 - 角色
 ![image](./data/imgs/backend-6.png)
-## Donation
-If this project help you a lot, you can support us by:
-
-AliPay
-
-![image](./data/imgs/alipay.png)
-
-Wechat Pay
-
-![image](./data/imgs/wechatpay.png)
+  
+# 补充说明
+下载下来后。
+`swag init` 生成swager 文档。直接运行会报错。
+复制 config.dev.toml 为 config.toml 改成你自己的配置信息。 
