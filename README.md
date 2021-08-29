@@ -136,3 +136,11 @@ git clone https://github.com/zxysilent/blog.git
 密码直接登录后台改。账户得改数据库的num字段。
 
 博客数据等，直接truncate table 清空吧。
+
+默认的统计代码 是第三方的统计页面访问量的。
+可以再加下百度的统计代码。
+关于页 和 友链是 特殊的页面。
+链接得用about和link。
+
+录入文章 需要添加 <!--more-->
+这个之前的是文章简介。
