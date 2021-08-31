@@ -38,6 +38,9 @@ html [type="button"] {
 </template>
 <script>
 import { mavonEditor } from "mavon-editor";
+var md = mavonEditor.getMarkdownIt();
+var mk = require('@area403/markdown-it-mathjax');
+md.use(mk)
 import "mavon-editor/dist/css/index.css";
 import Storage from "@/utils/storage";
 // 减少js体积
