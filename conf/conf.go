@@ -48,6 +48,8 @@ type appcfg struct {
 	Wechat struct {
 		GzhAppid  string `toml:"gzh_appid"`  //公众号
 		GzhSecret string `toml:"gzh_secret"` //公众号
+		GzhToken string `toml:"gzh_token"` //公众号token
+		GzhAESKey string `toml:"gzh_aeskey"` //公众号token
 		MpgAppid  string `toml:"mpg_appid"`  //小程序
 		MpgSecret string `toml:"mpg_secret"` //小程序
 		WebAppid  string `toml:"web_appid"`  //web

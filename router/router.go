@@ -34,6 +34,8 @@ func RunApp() {
 	engine.GET("/auth/qq.html", sysctl.ViewAuthQq)
 	//--- 页面 -- start
 	engine.GET("/", appctl.ViewIndex)              // 首页
+	engine.GET("/wx", appctl.ViewWxGet) //微信公众号
+	engine.POST("/wx", appctl.ViewWxGet) //微信公众号
 	engine.GET("/archives", appctl.ViewArchives)   // 归档
 	engine.GET("/tags", appctl.ViewTags)           // 标签
 	engine.GET("/tag/:tag", appctl.ViewTagPost)    // 具体某个标签
