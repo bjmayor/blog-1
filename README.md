@@ -1,19 +1,22 @@
-## 一个go语言实现的博客 
-  fork 自 https://github.com/zxysilent/blog
+# 一个go语言实现的博客
+
+fork 自 [https://github.com/zxysilent/blog](https://github.com/zxysilent/blog)
 在其上做了二次开发。
 增加了
+
 1. markdown mathjax支持。
 2. 对接了微信公众号。
 
 修复了一些小bug。
 
+预览地址： [http://blog.go2live.cn/](http://blog.go2live.cn/)
 
-预览地址： http://blog.go2live.cn/
-# 补充说明
+## 补充说明
+
 下载下来后。
 `swag init` 生成swager 文档。直接运行会报错。
 
-复制 config.dev.toml 为 config.toml 改成你自己的配置信息。 
+复制 config.dev.toml 为 config.toml 改成你自己的配置信息。
 
 密码直接登录后台改。账户得改数据库的num字段。
 
@@ -26,3 +29,9 @@
 
 录入文章 需要添加 <!--more-->
 这个之前的是文章简介。
+
+## 大概介绍下
+
+golang 提供api和网站。
+vue 提供管理后台，是前后端分离的。最后被打包成dist目录。
+所以你的后台登录地址依赖于你的nginx配置。

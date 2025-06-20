@@ -21,7 +21,7 @@ type Goinfo struct {
 type Global struct {
 	Id          int    `xorm:"INT(11) PK AUTOINCR comment('主键')" json:"id"`          //主键
 	SiteUrl     string `xorm:"VARCHAR(255) comment('网站地址')" json:"site_url"`         //网站地址
-	Author string `xorm:"VARCHAR(64) comment('作者')" json:"author"` //作者
+	Author      string `xorm:"VARCHAR(64) comment('作者')" json:"author"`              //作者
 	LogoUrl     string `xorm:"VARCHAR(255) comment('Logo地址')" json:"logo_url"`       //Logo地址
 	Title       string `xorm:"VARCHAR(255) comment('网站标题')" json:"title"`            //网站标题
 	Keywords    string `xorm:"VARCHAR(255) comment('网站关键词')" json:"keywords"`        //网站关键词
@@ -37,6 +37,8 @@ type Global struct {
 	Comment     string `xorm:"VARCHAR(1024) comment('评论脚本')" json:"comment"`         //评论脚本
 	GithubUrl   string `xorm:"VARCHAR(255) comment('githu地址')" json:"github_url"`    //githu地址
 	WeiboUrl    string `xorm:"VARCHAR(255) comment('微博地址')" json:"weibo_url"`        //微博地址
+	ZhihuUrl    string `xorm:"VARCHAR(255) comment('知乎地址')" json:"zhihu_url"`        // 知乎地址
+	CsdnUrl     string `xorm:"VARCHAR(255) comment('CSDN地址')" json:"csdn_url"`       // CSDN地址
 }
 
 const globalId = 1

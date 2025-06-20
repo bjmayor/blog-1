@@ -4,8 +4,8 @@
 	"description": "A template about Vue and iView By zxysilent. https://github.com/zxysilent",
 	"private": true,
 	"scripts": {
-		"serve": "vue-cli-service serve",
-		"build": "vue-cli-service build"
+		"serve": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service serve",
+		"build": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service build"
 	},
 	"dependencies": {
 		"@area403/markdown-it-mathjax": "^1.0.0",
