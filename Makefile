@@ -15,5 +15,3 @@ archive:
 	cp -r views deploy/
 	cp -r static deploy/
 	cp -r dist deploy/
-	tar zcvf blog.tar.gz deploy
-	cp blog.tar.gz ~/Documents/blog
