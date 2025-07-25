@@ -164,6 +164,13 @@ func PostSingle(path string) (*Post, bool) {
 	return mod, has
 }
 
+// PostPagesAll 获取所有已发布的页面
+func PostPagesAll() ([]Post, error) {
+	mods := make([]Post, 0, 8)
+	err := Db.Where("kind = 2 and status = 2").Cols("id", "title", "path").Find(&mods)
+	return mods, err
+}
+
 // ------------------------------------------------------ 归档使用 ------------------------------------------------------
 // Archive 归档
 type Archive struct {

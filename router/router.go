@@ -44,6 +44,7 @@ func RunApp() {
 	engine.GET("/links", appctl.ViewLinks)         // 友链
 	engine.GET("/page/*", appctl.ViewPage)         // 具体某个页面
 	engine.GET("/post/*", appctl.ViewPost)         // 具体某个文章
+	engine.GET("/my-pages", appctl.ViewMyPages)    // 我的页面
 	//--- 页面 -- end
 	api := engine.Group("/api")          // api/
 	apiRouter(api)                       // 注册分组路由

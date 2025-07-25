@@ -76,6 +76,17 @@ func ViewPage(ctx echo.Context) error {
 
 }
 
+// ViewMyPages 我的页面
+func ViewMyPages(ctx echo.Context) error {
+	pages, err := model.PostPagesAll()
+	if err != nil {
+		return ctx.Redirect(302, "/")
+	}
+	return ctx.Render(http.StatusOK, "my-pages.html", map[string]interface{}{
+		"Pages": pages,
+	})
+}
+
 // ------------------------------------------------------ 归档页面 ------------------------------------------------------
 // ViewArchives 归档页面
 func ViewArchives(ctx echo.Context) error {

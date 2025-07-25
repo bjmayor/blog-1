@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>{{.global.Title}}·我的页面</title>
+        <link rel="canonical" href="{{.global.SiteUrl}}/my-pages" />
+        {{template "tpl-linker.html" .}}
+        <style>
+            .page-list {
+                list-style: none;
+                padding: 0;
+            }
+            .page-item {
+                margin: 10px 0;
+                padding: 10px;
+                border-bottom: 1px solid #eee;
+            }
+            .page-item a {
+                font-size: 18px;
+                color: #333;
+                text-decoration: none;
+            }
+            .page-item a:hover {
+                color: #007bff;
+                text-decoration: underline;
+            }
+        </style>
+    <body>
+        {{template "tpl-naver.html" .}}
+        <div id="main">
+            <section id="page-index">
+                <h1 class="title">我的页面</h1>
+                <ul class="page-list">
+                    {{ range $k, $v := .Pages }}
+                    <li class="page-item">
+                        <a href="/page/{{$v.Path}}.html">{{$v.Title}}</a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </section>
+            {{template "tpl-footer.html" .}}
+        </div>
+        {{template "tpl-script.html" .}}
+    </body>
+</html>
